@@ -1,0 +1,67 @@
+//Estilos de Titulos Usando Varibles
+/* Estilos de Titulos */
+h1 {
+  font-family: $Fuente;
+  font-size: 2em;
+  color: #14130e;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: $Fuente;
+  font-size: 1.5em;
+  color: #14130e;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: $Fuente;
+  font-size: 1em;
+  color: #14130e;
+  font-weight: bold;
+}
+
+p {
+  font-family: $Fuente;
+  color: #14130e;
+  margin-top: 10;
+  text-align: justify;
+}
+  
+section  {
+  display: grid;
+  margin: 30px 20px;  
+    img { 
+      border-radius: 20px;
+      padding-bottom: 10px;
+      width: 100%;
+    }
+}
+
+
+.AjusteVideo {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+    iframe {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      height: 90%;
+    }
+}
+
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+
+  &Max {
+    @extend .error;
+    border-width: 3px;
+  }
+}
